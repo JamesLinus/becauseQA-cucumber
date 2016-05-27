@@ -1,0 +1,67 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.becausecucumber.eclipse.plugin.ui
+Bundle-Vendor: Alter Hu
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: org.becausecucumber.eclipse.plugin.ui;singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.becausecucumber.eclipse.plugin,
+ org.eclipse.xtext.ui,
+ org.eclipse.ui.ide;bundle-version="3.5.0",
+ org.eclipse.xtext.ui.shared,
+ org.eclipse.xtext.builder,
+ org.eclipse.xtext.common.types.ui,
+ org.eclipse.xtext.ui.codetemplates.ui,
+ org.eclipse.compare,
+ org.becausecucumber.eclipse.plugin.common;resolution:=optional,
+ org.eclipse.m2e.core,
+ org.eclipse.m2e.core.ui,
+ org.eclipse.m2e.maven.runtime,
+ org.eclipse.m2e.archetype.common,
+ org.eclipse.wst.xml.core;bundle-version="1.1.901",
+ org.eclipse.jdt.launching,
+ org.eclipse.pde.ui,
+ org.eclipse.jdt.debug.ui,
+ org.eclipse.core.databinding,
+ org.eclipse.jface.databinding,
+ org.eclipse.xtext.xbase.ui;bundle-version="2.7.2",
+ org.eclipse.jdt.core;bundle-version="3.10.0",
+ org.eclipse.jdt.ui;bundle-version="3.10.1",
+ org.eclipse.help.ui;bundle-version="4.0.100",
+ org.eclipse.search;bundle-version="3.9.100",
+ org.eclipse.ui.console,
+ org.eclipse.wst.sse.core;bundle-version="1.1.900",
+ org.eclipse.core.resources,
+ org.eclipse.ui.editors,
+ org.eclipse.ui
+Import-Package: org.apache.log4j;version="1.2.15"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: org.becausecucumber.eclipse.plugin.ui; uses:="org.osgi.framework,  com.google.inject,  org.eclipse.xtext.ui,  org.eclipse.core.resources,  org.eclipse.xtext.ui.guice,  org.eclipse.ui.plugin",
+ org.becausecucumber.eclipse.plugin.ui.contentassist;uses:="org.eclipse.emf.ecore,org.eclipse.xtext.ui.editor.contentassist,org.eclipse.xtext",
+ org.becausecucumber.eclipse.plugin.ui.contentassist.antlr; uses:="org.becausecucumber.eclipse.plugin.ui.contentassist.antlr.internal,  org.becausecucumber.eclipse.plugin.services,  org.eclipse.xtext.ui.codetemplates.ui.partialEditing,  org.eclipse.xtext.ui.editor.contentassist.antlr.internal,  org.eclipse.xtext,  org.eclipse.xtext.ui.editor.contentassist.antlr",
+ org.becausecucumber.eclipse.plugin.ui.contentassist.antlr.internal; uses:="org.becausecucumber.eclipse.plugin.services,  org.eclipse.xtext.ui.editor.contentassist.antlr.internal,  org.antlr.runtime,  org.eclipse.xtext",
+ org.becausecucumber.eclipse.plugin.ui.internal;uses:="org.osgi.framework,com.google.inject,org.eclipse.ui.plugin",
+ org.becausecucumber.eclipse.plugin.ui.common; uses:="org.w3c.dom,  org.eclipse.wst.xml.core.internal.provisional.document,  org.eclipse.jdt.core,  org.apache.maven.model,  org.eclipse.jface.text,  org.eclipse.swt.widgets,  org.eclipse.jdt.launching,  org.eclipse.m2e.core.ui.internal.editing,  org.eclipse.jface.viewers,  org.eclipse.debug.core,  org.eclipse.ui,  org.eclipse.core.runtime,  PomEdits,  org.eclipse.core.resources,  org.eclipse.m2e.core.ui.internal.wizards",
+ org.becausecucumber.eclipse.plugin.ui.console; uses:="org.eclipse.ui,  org.eclipse.ui.console,  org.eclipse.jface.action,  org.eclipse.jface.viewers,  org.eclipse.ui.part",
+ org.becausecucumber.eclipse.plugin.ui.dialog; uses:="org.eclipse.ui,  org.eclipse.swt.graphics,  org.eclipse.swt.widgets,  org.eclipse.jface.dialogs,  org.eclipse.ui.dialogs,  javax.swing",
+ org.becausecucumber.eclipse.plugin.ui.handler;uses:="org.eclipse.core.commands",
+ org.becausecucumber.eclipse.plugin.ui.hyperlink; uses:="org.eclipse.xtext.nodemodel,  org.eclipse.emf.ecore,  com.google.inject,  org.eclipse.xtext.ui.editor.hyperlinking,  org.eclipse.jface.text,  org.eclipse.xtext.resource,  org.eclipse.jface.text.hyperlink,  org.eclipse.jface.viewers",
+ org.becausecucumber.eclipse.plugin.ui.labeling;uses:="org.eclipse.xtext.ui.label,org.eclipse.emf.edit.ui.provider,org.becausecucumber.eclipse.plugin.cucumber",
+ org.becausecucumber.eclipse.plugin.ui.launchs; uses:="org.eclipse.ui,  org.eclipse.core.runtime,  org.eclipse.debug.core.model,  org.eclipse.swt.widgets,  org.eclipse.core.resources,  org.eclipse.debug.ui,  org.eclipse.jdt.internal.debug.ui.launcher,  org.eclipse.pde.ui.launcher,  org.eclipse.jface.viewers,  org.eclipse.debug.core",
+ org.becausecucumber.eclipse.plugin.ui.outline;uses:="org.eclipse.xtext.ui.editor.outline.impl,org.becausecucumber.eclipse.plugin.cucumber",
+ org.becausecucumber.eclipse.plugin.ui.preference; uses:="org.eclipse.ui,  org.becausecucumber.eclipse.plugin.ui.wizard,  org.eclipse.swt.widgets,  org.eclipse.jface.preference,  org.eclipse.core.databinding",
+ org.becausecucumber.eclipse.plugin.ui.preference.Initializer;uses:="org.eclipse.core.runtime.preferences",
+ org.becausecucumber.eclipse.plugin.ui.preference.searcherPage; uses:="org.eclipse.ui,  org.eclipse.core.runtime,  org.eclipse.swt.widgets,  org.eclipse.jface.preference,  org.eclipse.core.runtime.preferences",
+ org.becausecucumber.eclipse.plugin.ui.quickfix; uses:="org.eclipse.emf.ecore,  org.eclipse.ui,  org.eclipse.xtext.ui.editor.model.edit,  org.eclipse.core.resources,  org.eclipse.xtext.validation,  org.eclipse.xtext.ui.editor.quickfix",
+ org.becausecucumber.eclipse.plugin.ui.syntaxcolor;uses:="org.eclipse.xtext.resource,org.eclipse.xtext.ui.editor.utils,org.eclipse.xtext.ui.editor.syntaxcoloring",
+ org.becausecucumber.eclipse.plugin.ui.view;uses:="org.eclipse.ui,org.eclipse.jface.action,org.eclipse.swt.widgets",
+ org.becausecucumber.eclipse.plugin.ui.wizard; uses:="org.eclipse.ui,  org.eclipse.core.runtime,  org.w3c.dom,  org.eclipse.jface.preference,  org.eclipse.core.resources,  org.eclipse.ui.dialogs,  org.eclipse.jface.wizard,  org.eclipse.jface.viewers",
+ org.becausecucumber.eclipse.plugin.ui.wizard.selenium; uses:="org.eclipse.ui,  org.eclipse.swt.events,  org.eclipse.m2e.core.project,  org.eclipse.swt.widgets,  org.apache.maven.model,  org.eclipse.core.resources,  org.eclipse.m2e.core.ui.internal.wizards",
+ org.eclipse.wb.swt;uses:="org.eclipse.swt.graphics,org.eclipse.jface.resource",
+ org.becausecucumber.eclipse.plugin.ui.quickfix,
+ org.becausecucumber.eclipse.plugin.ui.contentassist,
+ org.becausecucumber.eclipse.plugin.ui.internal,
+ org.becausecucumber.eclipse.plugin.ui.contentassist.antlr,
+ org.becausecucumber.eclipse.plugin.ui.contentassist.antlr.internal
+Bundle-Activator: org.becausecucumber.eclipse.plugin.ui.internal.CucumberActivator
+Bundle-ClassPath: .

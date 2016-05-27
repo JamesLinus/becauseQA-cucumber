@@ -1,0 +1,6 @@
+
+set hostname=%~n0
+
+javaws http://pas-vxi-142:8080/computer/%hostname%/slave-agent.jnlp
+
+echo "well done!"

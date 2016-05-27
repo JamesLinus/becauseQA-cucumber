@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.becausecucumber.eclipse.plugin.feature"
+      label="%featureName"
+      version="1.0.0.qualifier"
+      provider-name="%providerName"
+      os="aix,hpux,linux,macosx,qnx,solaris,win32"
+      ws="carbon,cocoa,gtk,motif,photon,win32,wpf"
+      nl=",ar,ar_AE,ar_BH,ar_DZ,ar_EG,ar_IQ,ar_JO,ar_KW,ar_LB,ar_LY,ar_MA,ar_OM,ar_QA,ar_SA,ar_SD,ar_SY,ar_TN,ar_YE,be,be_BY,bg,bg_BG,ca,ca_ES,cs,cs_CZ,da,da_DK,de,de_AT,de_CH,de_DE,de_GR,de_LU,el,el_CY,el_GR,en,en_AU,en_CA,en_GB,en_IE,en_IN,en_MT,en_NZ,en_PH,en_SG,en_US,en_ZA,es,es_AR,es_BO,es_CL,es_CO,es_CR,es_CU,es_DO,es_EC,es_ES,es_GT,es_HN,es_MX,es_NI,es_PA,es_PE,es_PR,es_PY,es_SV,es_US,es_UY,es_VE,et,et_EE,fi,fi_FI,fr,fr_BE,fr_CA,fr_CH,fr_FR,fr_LU,ga,ga_IE,hi,hi_IN,hr,hr_HR,hu,hu_HU,in,in_ID,is,is_IS,it,it_CH,it_IT,iw,iw_IL,ja,ja_JP,ja_JP_JP_#u-ca-japanese,ko,ko_KR,lt,lt_LT,lv,lv_LV,mk,mk_MK,ms,ms_MY,mt,mt_MT,nl,nl_BE,nl_NL,no,no_NO,no_NO_NY,pl,pl_PL,pt,pt_BR,pt_PT,ro,ro_RO,ru,ru_RU,sk,sk_SK,sl,sl_SI,sq,sq_AL,sr,sr__#Latn,sr_BA,sr_BA_#Latn,sr_CS,sr_ME,sr_ME_#Latn,sr_RS,sr_RS_#Latn,sv,sv_SE,th,th_TH,th_TH_TH_#u-nu-thai,tr,tr_TR,uk,uk_UA,vi,vi_VN,zh,zh_CN,zh_HK,zh_SG,zh_TW"
+      arch="ia64,ia64_32,PA_RISC,ppc,sparc,x86,x86_64">
+
+   <description url="%updateSiteUrl">
+      %description
+   </description>
+
+   <copyright url="%updateSiteUrl">
+      %copyright
+   </copyright>
+
+   <license url="%updateSiteUrl">
+      %license
+   </license>
+
+   <url>
+      <update label="%updateSiteUrl" url="https://becausetesting.github.io/becausecucumber"/>
+      <discovery label="Xtext" url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
+   </url>
+
+   <includes
+         id="org.eclipse.xtext.runtime"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.xtext.ui"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.xtext.xbase"
+         version="0.0.0"/>
+
+   <requires>
+      <import plugin="org.eclipse.xtext"/>
+      <import plugin="org.eclipse.xtext.ui" version="2.7.3" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.xtext.xbase" version="2.7.3" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.xtext.generator" version="2.7.3" match="greaterOrEqual"/>
+      <import plugin="org.apache.commons.logging"/>
+      <import plugin="org.apache.log4j"/>
+      <import plugin="org.eclipse.equinox.p2.core" version="2.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.commands" version="3.6.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.runtime" version="3.10.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui" version="3.106.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.console" version="3.5.300" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.resources" version="3.9.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jdt.core" version="3.10.2" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jdt" version="3.10.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jface.text" version="3.9.2" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.ide" version="3.10.2" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.editors" version="3.8.200" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.equinox.p2.engine" version="2.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.equinox.p2.metadata" version="2.2.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.debug.core" version="3.9.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.equinox.p2.operations" version="2.4.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.equinox.p2.repository" version="2.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.emf.common" version="2.10.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.xtext" version="2.7.3" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jdt.ui" version="3.10.2" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.search" version="3.9.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.osgi"/>
+      <import plugin="org.eclipse.ui.ide" version="3.5.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.xtext.ui.shared" version="2.7.3" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.xtext.builder" version="2.7.3" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.xtext.common.types.ui" version="2.7.3" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.xtext.ui.codetemplates.ui" version="2.7.3" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.compare" version="3.5.501" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.m2e.core" version="1.5.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.m2e.core.ui" version="1.5.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.m2e.maven.runtime"/>
+      <import plugin="org.eclipse.m2e.archetype.common"/>
+      <import plugin="org.eclipse.wst.xml.core" version="1.1.901" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jdt.launching" version="3.7.102" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.pde.ui" version="3.8.101" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jdt.debug.ui" version="3.6.300" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.databinding" version="1.4.2" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jface.databinding" version="1.6.200" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.xtext.xbase.ui" version="2.7.2" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jdt.core" version="3.10.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jdt.ui" version="3.10.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.help.ui" version="4.0.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.wst.sse.core" version="1.1.900" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.forms" version="3.6.100" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="org.becausecucumber.eclipse.plugin"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="org.becausecucumber.eclipse.plugin.common"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="org.becausecucumber.eclipse.plugin.ui"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.qualifier"
+         unpack="false"/>
+
+</feature>

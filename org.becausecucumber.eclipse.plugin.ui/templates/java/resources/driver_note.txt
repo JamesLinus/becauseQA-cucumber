@@ -1,0 +1,27 @@
+
+ driver update:
+ 
+ 2015-05-13
+ 
+* chrome driver version: 2.15
+* ie driver version: 2.45
+
+ 
+ **********************************************************************
+
+1. for IE and safari driver:
+
+
+download place:
+
+https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver
+
+http://selenium-release.storage.googleapis.com/index.html
+
+
+
+2. for chrome driver:
+
+https://sites.google.com/a/chromium.org/chromedriver/downloads
+
+

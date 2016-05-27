@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Eclipse Color Theme
+Bundle-SymbolicName: org.becausecucumber.eclipse.colortheme;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.cucumberpeople.eclipse.colortheme.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.ui.forms
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: org.cucumberpeople.eclipse.colortheme;
+  uses:="org.osgi.framework,
+   org.w3c.dom,
+   org.eclipse.jface.resource,
+   org.eclipse.core.runtime.preferences,
+   org.eclipse.ui.plugin",
+ org.cucumberpeople.eclipse.colortheme.mapper;uses:="org.w3c.dom,org.cucumberpeople.eclipse.colortheme,org.eclipse.core.runtime.preferences",
+ org.cucumberpeople.eclipse.colortheme.preferences;
+  uses:="org.eclipse.ui,
+   org.eclipse.swt.widgets,
+   org.eclipse.jface.preference,
+   org.eclipse.core.runtime.preferences"
