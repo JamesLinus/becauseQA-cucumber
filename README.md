@@ -1,3 +1,3 @@
 # becausecucumber
 Cucumber plugin 
-Update Site: http://becausetesting.github.io/becausecucumber
+Update Site: https://becausetesting.github.io/becausecucumber
