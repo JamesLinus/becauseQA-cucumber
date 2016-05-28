@@ -43,6 +43,7 @@
       <import plugin="org.eclipse.xtext.ui" version="2.7.3" match="greaterOrEqual"/>
       <import plugin="org.eclipse.xtext.xbase" version="2.7.3" match="greaterOrEqual"/>
       <import plugin="org.eclipse.xtext.generator" version="2.7.3" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.emf.common" version="2.10.1" match="greaterOrEqual"/>
       <import plugin="org.apache.commons.logging"/>
       <import plugin="org.apache.log4j"/>
       <import plugin="org.eclipse.equinox.p2.core" version="2.3.0" match="greaterOrEqual"/>
@@ -61,7 +62,6 @@
       <import plugin="org.eclipse.debug.core" version="3.9.1" match="greaterOrEqual"/>
       <import plugin="org.eclipse.equinox.p2.operations" version="2.4.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.equinox.p2.repository" version="2.3.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.emf.common" version="2.10.1" match="greaterOrEqual"/>
       <import plugin="org.eclipse.xtext" version="2.7.3" match="greaterOrEqual"/>
       <import plugin="org.eclipse.jdt.ui" version="3.10.2" match="greaterOrEqual"/>
       <import plugin="org.eclipse.search" version="3.9.100" match="greaterOrEqual"/>
@@ -87,7 +87,13 @@
       <import plugin="org.eclipse.jdt.ui" version="3.10.1" match="greaterOrEqual"/>
       <import plugin="org.eclipse.help.ui" version="4.0.100" match="greaterOrEqual"/>
       <import plugin="org.eclipse.wst.sse.core" version="1.1.900" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.ui.forms" version="3.6.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.emf.mwe2.launch" version="2.8.3" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.xtext.util"/>
+      <import plugin="org.eclipse.emf.ecore"/>
+      <import plugin="org.antlr.runtime"/>
+      <import plugin="org.eclipse.xtext.xbase.lib"/>
+      <import plugin="org.eclipse.xtext.common.types"/>
+      <import plugin="org.becausecucumber.eclipse.plugin"/>
    </requires>
 
    <plugin
