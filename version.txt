@@ -1,0 +1,10 @@
+--------------------------------------------------------
+Version: 1.0.0 2016.05.27
+New Feature:
+1. Refactor the whole project code.
+
+
+Bug Fixed:
+1. Remove the Ruby check issue when start the eclipse.
+
+--------------------------------------------------------
