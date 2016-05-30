@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <templates>
-		<template id="given" autoinsert="true" context="org.cucumberpeople.eclipse.plugin.Cucumber.Step" deleted="false" description="Given Statement" enabled="true" name="Given">Given ${do_something}&#13;
+		<template id="given" autoinsert="true" context="org.becausecucumber.eclipse.plugin.Cucumber.Step" deleted="false" description="Given Statement" enabled="true" name="Given">Given ${do_something}&#13;
 ${cursor}
 		</template>
-		<template id="when" autoinsert="true" context="org.cucumberpeople.eclipse.plugin.Cucumber.Step" deleted="false" description="When Statement" enabled="true" name="When">When ${do_something}&#13;
-${cursor}
-		</template>
-
-		<template id="then" autoinsert="true" context="org.cucumberpeople.eclipse.plugin.Cucumber.Step" deleted="false" description="Then Statement" enabled="true" name="Then">Then ${do_something}&#13;
+		<template id="when" autoinsert="true" context="org.becausecucumber.eclipse.plugin.Cucumber.Step" deleted="false" description="When Statement" enabled="true" name="When">When ${do_something}&#13;
 ${cursor}
 		</template>
 
-		<template id="and" autoinsert="true" context="org.cucumberpeople.eclipse.plugin.Cucumber.Step" deleted="false" description="And Statement" enabled="true" name="And">And ${do_something}&#13;
+		<template id="then" autoinsert="true" context="org.becausecucumber.eclipse.plugin.Cucumber.Step" deleted="false" description="Then Statement" enabled="true" name="Then">Then ${do_something}&#13;
 ${cursor}
 		</template>
 
-		<template id="but" autoinsert="true" context="org.cucumberpeople.eclipse.plugin.Cucumber.Step" deleted="false" description="But Statement" enabled="true" name="But">But ${do_something}&#13;
+		<template id="and" autoinsert="true" context="org.becausecucumber.eclipse.plugin.Cucumber.Step" deleted="false" description="And Statement" enabled="true" name="And">And ${do_something}&#13;
 ${cursor}
 		</template>
 
-		<template id="docstring" autoinsert="true" context="org.cucumberpeople.eclipse.plugin.Cucumber.DocString" deleted="false" description="DocString Statement" enabled="true" name="DocString">
+		<template id="but" autoinsert="true" context="org.becausecucumber.eclipse.plugin.Cucumber.Step" deleted="false" description="But Statement" enabled="true" name="But">But ${do_something}&#13;
+${cursor}
+		</template>
+
+		<template id="docstring" autoinsert="true" context="org.becausecucumber.eclipse.plugin.Cucumber.DocString" deleted="false" description="DocString Statement" enabled="true" name="DocString">
 		"""&#13;
 		${full_content}&#13;
 		"""&#13;
 		${cursor}
 		</template>
 
-		<template id="feature" autoinsert="true" context="org.cucumberpeople.eclipse.plugin.Cucumber.Feature" deleted="false" description="a  full feature code sample" enabled="true" name="Feature Code Template">Feature: In order to do ${something}&#13;
+		<template id="feature" autoinsert="true" context="org.becausecucumber.eclipse.plugin.Cucumber.Feature" deleted="false" description="a  full feature code sample" enabled="true" name="Feature Code Template">Feature: In order to do ${something}&#13;
 		 As I am ${someone}&#13;
 		 I want to ${do_somthing}
   ${cursor}</template>
 
-		<template id="background" autoinsert="true" context="org.cucumberpeople.eclipse.plugin.Cucumber.Background" deleted="false" description="a full Backgroud code sample" enabled="true" name="Background code template">Background: ${background_name}&#13;
+		<template id="background" autoinsert="true" context="org.becausecucumber.eclipse.plugin.Cucumber.Background" deleted="false" description="a full Backgroud code sample" enabled="true" name="Background code template">Background: ${background_name}&#13;
    Given the user is logged in the system&#13;
    ${cursor}
 		</template>
 		  
-		<template id="scenario" autoinsert="true" context="org.cucumberpeople.eclipse.plugin.Cucumber.Scenario" deleted="false" description="a full scenario code sample" enabled="true" name="Scenario Code Template">Scenario: ${your_scenario_name}&#13;
+		<template id="scenario" autoinsert="true" context="org.becausecucumber.eclipse.plugin.Cucumber.Scenario" deleted="false" description="a full scenario code sample" enabled="true" name="Scenario Code Template">Scenario: ${your_scenario_name}&#13;
    Given ${something}&#13;
    ${cursor}
 		</template>
 
-		<template id="scenariooutline" autoinsert="true" context="org.cucumberpeople.eclipse.plugin.Cucumber.ScenarioOutline" deleted="false" description="a full scenariooutline code sample" enabled="true" name="Scenario Outline Code Template">Scenario Outline: ${your_scenario_outline_description}&#13;
+		<template id="scenariooutline" autoinsert="true" context="org.becausecucumber.eclipse.plugin.Cucumber.ScenarioOutline" deleted="false" description="a full scenariooutline code sample" enabled="true" name="Scenario Outline Code Template">Scenario Outline: ${your_scenario_outline_description}&#13;
    Given ${parameter1}&#13;
     ${cursor}&#13;
 		   &#13;
@@ -52,68 +52,68 @@ ${cursor}
 	   ${cursor}
 		</template>
 
-		<template id="title" autoinsert="true" context="org.cucumberpeople.eclipse.plugin.Cucumber.Title" deleted="false" description="a simple title code" enabled="true" name="Title Code for Feature Template">In order to ${do_something}&#13;
+		<template id="title" autoinsert="true" context="org.becausecucumber.eclipse.plugin.Cucumber.Title" deleted="false" description="a simple title code" enabled="true" name="Title Code for Feature Template">In order to ${do_something}&#13;
          As user ${user}&#13;
          ${cursor}
 		</template>
 
-		<template id="codetitle" autoinsert="true" context="org.cucumberpeople.eclipse.plugin.Cucumber.Title" deleted="false" description="a simple title code" enabled="true" name="Title Code for Scenario Template">Verify ${something}${cursor}
+		<template id="codetitle" autoinsert="true" context="org.becausecucumber.eclipse.plugin.Cucumber.Title" deleted="false" description="a simple title code" enabled="true" name="Title Code for Scenario Template">Verify ${something}${cursor}
 		</template>
 
-		<template id="steptitle" autoinsert="true" context="org.cucumberpeople.eclipse.plugin.Cucumber.Title" deleted="false" description="a simple title code for scenario title" enabled="true" name="Title Code for Scenario Template">Check ${something}${cursor}
+		<template id="steptitle" autoinsert="true" context="org.becausecucumber.eclipse.plugin.Cucumber.Title" deleted="false" description="a simple title code for scenario title" enabled="true" name="Title Code for Scenario Template">Check ${something}${cursor}
         </template>
 
-		<template id="example1" autoinsert="true" context="org.cucumberpeople.eclipse.plugin.Cucumber.Examples" deleted="false" description="a full code sample with one column" enabled="true" name="Example-1 Column Code Template">Examples:&#13;
+		<template id="example1" autoinsert="true" context="org.becausecucumber.eclipse.plugin.Cucumber.Examples" deleted="false" description="a full code sample with one column" enabled="true" name="Example-1 Column Code Template">Examples:&#13;
 		 &#13;
 	 | ${parameter1} | &#13;
      | ${value_1}       |&#13;
 	 ${cursor}
 		</template>
-		<template id="example2" autoinsert="true" context="org.cucumberpeople.eclipse.plugin.Cucumber.Examples" deleted="false" description="a full code sample with two columns" enabled="true" name="Examples-2 Columns Code Template">Examples:&#13;
+		<template id="example2" autoinsert="true" context="org.becausecucumber.eclipse.plugin.Cucumber.Examples" deleted="false" description="a full code sample with two columns" enabled="true" name="Examples-2 Columns Code Template">Examples:&#13;
 		 &#13;
 	 | ${parameter1} | ${parameter2} |&#13;
      | ${value_1}       | ${value_2}       |&#13;
 	 ${cursor}
 		</template>
-		<template id="example3" autoinsert="true" context="org.cucumberpeople.eclipse.plugin.Cucumber.Examples" deleted="false" description="a full code sample with three columns" enabled="true" name="Examples-3 Columns Code Template">Examples:&#13;
+		<template id="example3" autoinsert="true" context="org.becausecucumber.eclipse.plugin.Cucumber.Examples" deleted="false" description="a full code sample with three columns" enabled="true" name="Examples-3 Columns Code Template">Examples:&#13;
 		 &#13;
 	 | ${parameter1} | ${parameter2} | ${parameter3}|&#13;
 	 | ${value_1}       | ${value_2}       | ${value_3}      |&#13;
 	 ${cursor}
 		</template>
-		<template id="example4" autoinsert="true" context="org.cucumberpeople.eclipse.plugin.Cucumber.Examples" deleted="false" description="a full code sample with four columns" enabled="true" name="Examples-4 Columns Code template">Examples:&#13;
+		<template id="example4" autoinsert="true" context="org.becausecucumber.eclipse.plugin.Cucumber.Examples" deleted="false" description="a full code sample with four columns" enabled="true" name="Examples-4 Columns Code template">Examples:&#13;
 		 &#13;
 	 | ${parameter1} | ${parameter2} | ${parameter3}| ${parameter4}|&#13;
 	 | ${value_1}       | ${value_2}       | ${value_3}      | ${value_4}      |&#13;
      ${cursor}
 		</template>
-		<template id="example5" autoinsert="true" context="org.cucumberpeople.eclipse.plugin.Cucumber.Examples" deleted="false" description="a full code sample with five columns" enabled="true" name="Example-5 Columns Code Template">Examples:&#13;
+		<template id="example5" autoinsert="true" context="org.becausecucumber.eclipse.plugin.Cucumber.Examples" deleted="false" description="a full code sample with five columns" enabled="true" name="Example-5 Columns Code Template">Examples:&#13;
 		 &#13;
 	 | ${parameter1} | ${parameter2} | ${parameter3}| ${parameter4}| ${parameter5}|&#13;
 	 | ${value_1}       | ${value_2}       | ${value_3}      | ${value_4}      | ${value_5}      |&#13;
 	 ${cursor}
 		</template>
 
-		<template id="table1" autoinsert="true" context="org.cucumberpeople.eclipse.plugin.Cucumber.Table" deleted="false" description="a full table code with one column" enabled="true" name="1 Column Table">| ${parameter1} | &#13;
+		<template id="table1" autoinsert="true" context="org.becausecucumber.eclipse.plugin.Cucumber.Table" deleted="false" description="a full table code with one column" enabled="true" name="1 Column Table">| ${parameter1} | &#13;
 | ${value_1}       |&#13;
 ${cursor}
 		</template>
-		<template id="table2" autoinsert="true" context="org.cucumberpeople.eclipse.plugin.Cucumber.Table" deleted="false" description="a full table code with two columns" enabled="true" name="2 Columns Table"> | ${parameter1} | ${parameter2} | &#13;
+		<template id="table2" autoinsert="true" context="org.becausecucumber.eclipse.plugin.Cucumber.Table" deleted="false" description="a full table code with two columns" enabled="true" name="2 Columns Table"> | ${parameter1} | ${parameter2} | &#13;
 | ${value_1}       | ${value_2}       |&#13;
 ${cursor} 
 		</template>
 
-		<template id="table3" autoinsert="true" context="org.cucumberpeople.eclipse.plugin.Cucumber.Table" deleted="false" description="a full table code with three columns" enabled="true" name="3 Columns Table">| ${parameter1} | ${parameter2} | ${parameter3}|&#13;
+		<template id="table3" autoinsert="true" context="org.becausecucumber.eclipse.plugin.Cucumber.Table" deleted="false" description="a full table code with three columns" enabled="true" name="3 Columns Table">| ${parameter1} | ${parameter2} | ${parameter3}|&#13;
 | ${value_1}       | ${value_2}       | ${value_3}      |&#13;
 ${cursor}
 		</template>
 
-		<template id="table4" autoinsert="true" context="org.cucumberpeople.eclipse.plugin.Cucumber.Table" deleted="false" description="a full table code with four columns" enabled="true" name="4 Columns Table">| ${parameter1} | ${parameter2} | ${parameter3}| ${parameter4}|&#13;
+		<template id="table4" autoinsert="true" context="org.becausecucumber.eclipse.plugin.Cucumber.Table" deleted="false" description="a full table code with four columns" enabled="true" name="4 Columns Table">| ${parameter1} | ${parameter2} | ${parameter3}| ${parameter4}|&#13;
 | ${value_1}       | ${value_2}       | ${value_3}      | ${value_4}      |&#13;
 ${cursor}
 		</template>
 
-		<template id="table5" autoinsert="true" context="org.cucumberpeople.eclipse.plugin.Cucumber.Table" deleted="false" description="a full table code with five columns" enabled="true" name="5 Columns Tabe">| ${parameter1} | ${parameter2} | ${parameter3}| ${parameter4}| ${parameter5}|&#13;
+		<template id="table5" autoinsert="true" context="org.becausecucumber.eclipse.plugin.Cucumber.Table" deleted="false" description="a full table code with five columns" enabled="true" name="5 Columns Tabe">| ${parameter1} | ${parameter2} | ${parameter3}| ${parameter4}| ${parameter5}|&#13;
 | ${value_1}       | ${value_2}       | ${value_3}      | ${value_4}      | ${value_5}      |&#13;
 ${cursor}
 		</template>
