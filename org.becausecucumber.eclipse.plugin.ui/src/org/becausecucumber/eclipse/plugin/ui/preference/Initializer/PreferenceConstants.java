@@ -2,7 +2,7 @@ package org.becausecucumber.eclipse.plugin.ui.preference.Initializer;
 
 public class PreferenceConstants {
 
-	public static final String UPDATE_SITE = "https://becausetesting.github.io/becausecucumber";
+	public static final String UPDATE_SITE = "http://becausetesting.github.io/becausecucumber";
 	public static final String UPDATE_PLUGIN_ID = "org.cucumberpeople.eclipse.plugin.feature.feature.group";
 	public static final String CONTACT = "alterhu2020@gmail.com";
 
