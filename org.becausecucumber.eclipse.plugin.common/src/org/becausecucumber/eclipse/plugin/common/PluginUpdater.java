@@ -60,7 +60,7 @@ public class PluginUpdater {
  */
 	public String checkForUpdates() {
 		
-		Log.info("Checking if available new cucumber plugin to download");
+		Log.info("Checking if available new cucumber plugin to download from url: "+this.updateSite);
 		Log.info("Checking version process maybe takes serveral minutes and depends on your eclipse performance.");
 		//try {
 			IProvisioningAgentProvider agentProvider= Activator.getDefault().getProvisioningAgentProvider();
@@ -135,7 +135,7 @@ public class PluginUpdater {
 	
 						@Override
 						public void run() {
-							message="Find a new version available for cucumber plugin.";
+							message="Find a new version available for cucumber plugin from site： "+updateSite;
 							Log.info( "Find a new available cucumber plugin,please follow the guideline to install it. ");
 							runCommand("org.eclipse.equinox.p2.ui.sdk.update", "Failed to open the check for updates dialog.", null);
 						}
@@ -145,7 +145,7 @@ public class PluginUpdater {
 			}
 			if(code==10000){
 				message=modalResolution.getMessage();
-				Log.info("No available Cucumber plugin to download, "+message);
+				Log.info("No available Cucumber plugin to download from url: "+updateSite+",response content is: "+message);
 				/*boolean goToSites = MessageDialog.openQuestion(, "Cucumber Plugin Version Check",modalResolution.getMessage());
 				if (goToSites) {
 					getProvisioningUI().manipulateRepositories(getShell());
