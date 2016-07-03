@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: org.becausecucumber.eclipse.plugin.ui
 Bundle-Vendor: Alter Hu
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 1.0.1.qualifier
 Bundle-SymbolicName: org.becausecucumber.eclipse.plugin.ui;singleton:=true
 Bundle-ActivationPolicy: lazy
 Require-Bundle: org.becausecucumber.eclipse.plugin,
