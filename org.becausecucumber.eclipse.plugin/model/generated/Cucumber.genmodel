@@ -4,7 +4,7 @@
     editorDirectory="/org.becausecucumber.eclipse.plugin.editor/src" modelPluginID="org.becausecucumber.eclipse.plugin"
     forceOverwrite="true" modelName="Cucumber" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     complianceLevel="6.0" copyrightFields="false" editPluginID="org.becausecucumber.eclipse.plugin.edit"
-    editorPluginID="org.becausecucumber.eclipse.plugin.editor" runtimeVersion="2.11">
+    editorPluginID="org.becausecucumber.eclipse.plugin.editor" runtimeVersion="2.12">
   <genPackages prefix="Cucumber" basePackage="org.becausecucumber.eclipse.plugin"
       disposableProviderFactory="true" fileExtensions="feature" ecorePackage="Cucumber.ecore#/">
     <genClasses ecoreClass="Cucumber.ecore#//Feature">

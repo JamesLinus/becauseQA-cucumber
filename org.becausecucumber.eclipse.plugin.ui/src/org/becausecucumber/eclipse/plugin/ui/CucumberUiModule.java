@@ -11,6 +11,7 @@ import org.becausecucumber.eclipse.plugin.ui.syntaxcolor.SemanticHighlightingCal
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.eclipse.xtext.builder.IXtextBuilderParticipant;
 import org.eclipse.xtext.parser.antlr.ISyntaxErrorMessageProvider;
+import org.eclipse.xtext.ui.editor.contentassist.XtextContentAssistProcessor;
 import org.eclipse.xtext.ui.editor.hyperlinking.IHyperlinkHelper;
 import org.eclipse.xtext.ui.editor.syntaxcoloring.AbstractAntlrTokenToAttributeIdMapper;
 import org.eclipse.xtext.ui.editor.syntaxcoloring.IHighlightingConfiguration;
@@ -34,6 +35,20 @@ public class CucumberUiModule extends org.becausecucumber.eclipse.plugin.ui.Abst
 		super(plugin);
 	}
 
+	@Override
+	public void configure(Binder binder) {
+		// TODO Auto-generated method stub
+		super.configure(binder);
+		// Start auto complete when a space is entered in the model file.
+		// See also http://christiandietrich.wordpress.com/2011/09/19/xtext-content-assist-auto-activation/
+		//
+		// The characters " ", "{" and "[" will now trigger code completion automatically
+		// Tried to use eol as well, but it does not work out as expected.
+		//String eol = System.getProperty("line.separator");
+		binder.bind(String.class).annotatedWith(
+		    com.google.inject.name.Names.named((XtextContentAssistProcessor.COMPLETION_AUTO_ACTIVATION_CHARS)))
+				.toInstance("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz @"/* + eol*/);
+	}
 	/*
 	 * (non-Javadoc) for create the proposal insert
 	 * 

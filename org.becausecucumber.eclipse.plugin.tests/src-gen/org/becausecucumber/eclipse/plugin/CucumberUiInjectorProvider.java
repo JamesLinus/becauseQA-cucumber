@@ -8,10 +8,10 @@ import org.eclipse.xtext.junit4.IInjectorProvider;
 import com.google.inject.Injector;
 
 public class CucumberUiInjectorProvider implements IInjectorProvider {
-	
+
 	@Override
 	public Injector getInjector() {
 		return org.becausecucumber.eclipse.plugin.ui.internal.CucumberActivator.getInstance().getInjector("org.becausecucumber.eclipse.plugin.Cucumber");
 	}
-	
+
 }
