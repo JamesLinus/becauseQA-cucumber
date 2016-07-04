@@ -1,6 +1,16 @@
 --------------------------------------------------------
 Version: 1.0.0 2016.05.27
 New Feature:
+1. Content assistant with triggerred when you type any word in feature file.
+
+
+Bug Fixed:
+N0
+
+--------------------------------------------------------
+--------------------------------------------------------
+Version: 1.0.0 2016.05.27
+New Feature:
 1. Refactor the whole project code.
 
 
