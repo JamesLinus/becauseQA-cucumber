@@ -5,6 +5,7 @@ package org.becausecucumber.eclipse.plugin.ui;
 
 import org.becausecucumber.eclipse.plugin.common.searcher.AbstractAnnotationDescriptor;
 import org.becausecucumber.eclipse.plugin.ui.hyperlink.CucumberHyperlinkHelper;
+import org.becausecucumber.eclipse.plugin.ui.preference.Initializer.PreferenceConstants;
 import org.becausecucumber.eclipse.plugin.ui.syntaxcolor.HighlightingConfiguration;
 import org.becausecucumber.eclipse.plugin.ui.syntaxcolor.LexicalHighlightingCalculator;
 import org.becausecucumber.eclipse.plugin.ui.syntaxcolor.SemanticHighlightingCalculator;
@@ -20,11 +21,12 @@ import org.eclipse.xtext.ui.resource.IResourceSetProvider;
 import org.eclipse.xtext.ui.resource.SimpleResourceSetProvider;
 
 import com.google.inject.Binder;
+import com.google.inject.name.Names;
 
 /**
  * Use this class to register components to be used within the IDE.
  */
-@SuppressWarnings("restriction")
+@SuppressWarnings({ "deprecation" })
 public class CucumberUiModule extends org.becausecucumber.eclipse.plugin.ui.AbstractCucumberUiModule {
 
 	public final static String[] STEPS = { "Given", "When", "Then", "And", "But" };
@@ -39,16 +41,11 @@ public class CucumberUiModule extends org.becausecucumber.eclipse.plugin.ui.Abst
 	public void configure(Binder binder) {
 		// TODO Auto-generated method stub
 		super.configure(binder);
-		// Start auto complete when a space is entered in the model file.
-		// See also http://christiandietrich.wordpress.com/2011/09/19/xtext-content-assist-auto-activation/
-		//
-		// The characters " ", "{" and "[" will now trigger code completion automatically
-		// Tried to use eol as well, but it does not work out as expected.
-		//String eol = System.getProperty("line.separator");
-		binder.bind(String.class).annotatedWith(
-		    com.google.inject.name.Names.named((XtextContentAssistProcessor.COMPLETION_AUTO_ACTIVATION_CHARS)))
-				.toInstance("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz @"/* + eol*/);
+		binder.bind(String.class)
+				.annotatedWith(Names.named((XtextContentAssistProcessor.COMPLETION_AUTO_ACTIVATION_CHARS)))
+				.toInstance(PreferenceConstants.CONTENT_ASSISTANT_VALUE);
 	}
+
 	/*
 	 * (non-Javadoc) for create the proposal insert
 	 * 

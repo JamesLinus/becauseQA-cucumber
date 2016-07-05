@@ -2,12 +2,14 @@ package org.becausecucumber.eclipse.plugin.ui.preference.Initializer;
 
 public class PreferenceConstants {
 
-	public static final String UPDATE_SITE = "http://becausetesting.github.io/becausecucumber";
+	public static final String UPDATE_SITE = "http://becausetesting.github.io/becausecucumber/";
 	public static final String UPDATE_PLUGIN_ID = "org.cucumberpeople.eclipse.plugin.feature.feature.group";
 	public static final String CONTACT = "alterhu2020@gmail.com";
+	public static final String CONTENT_ASSISTANT_VALUE = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz =.(!+-*/~,[{@#$%^&"
+			+ System.getProperty("line.separator");
 
-	public static final String TESTRAIL_BASEURL = "https://testrailserver/testrail";
-	public static final String TESTRAIL_PROJECTNAME = "projectname";
+	public static final String TESTRAIL_BASEURL = "https://testrailservername/testrail";
+	public static final String TESTRAIL_PROJECTNAME = "ProjectName";
 	public static final String JENKINS_BASEURL = "http://jenkins server url/";
 	public static final String TESTRAIL_ENV_VALUE = "QA3,QA4,QA5,Production";
 
@@ -64,5 +66,7 @@ public class PreferenceConstants {
 	public static final String EMAIL_FROM = "email_from";
 	public static final String EMAIL_TO = "email_to";
 	public static final String EMAIL_SUBJECT = "email_subject";
+
+	public static final String CONTENT_ASSITANT_STRING = "contentAssistantStr";
 
 }

@@ -1,6 +1,6 @@
 package com.sample.steps;
 
-import com.framework.utilities.BaseSteps;
+import com.github.becausetesting.cucumber.selenium.BaseSteps;
 
 import cucumber.api.java.en.Given;
 

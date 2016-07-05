@@ -67,6 +67,8 @@ public class BasePreferenceInitializer extends AbstractPreferenceInitializer {
 		// view result configuration
 		store.setDefault(PreferenceConstants.VIEW_RESULT, true);
 		store.setDefault(PreferenceConstants.BUILD_NUMBER, 0);
+		
+		store.setDefault(PreferenceConstants.CONTENT_ASSITANT_STRING, PreferenceConstants.CONTENT_ASSISTANT_VALUE);
 
 	}
 

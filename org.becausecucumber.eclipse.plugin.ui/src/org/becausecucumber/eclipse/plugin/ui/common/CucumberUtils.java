@@ -454,7 +454,7 @@ public class CucumberUtils {
 			page.setMessage("This is a Java Class File with Cucumber Step Defination Defined");
 			page.setDescription("Insert Cucumber Step:\n" + method);
 			page.setTypeName("SampleSteps", true);
-			page.setSuperClass("com.framework.selenium.BaseSteps", true);
+			page.setSuperClass("com.github.becausetesting.cucumber.selenium.BaseSteps", true);
 
 			page.setMethodStubSelection(true, false, false, true);
 			page.setAddComments(true, true);
@@ -499,7 +499,7 @@ public class CucumberUtils {
 			String filedefination = selectedpackage + "import cucumber.api.java.en." + keyword + ";\n"
 					+ "import org.openqa.selenium.support.PageFactory;\n"
 					+ "//import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;\n"
-					+ "import com.framework.selenium.BaseSteps;\n" + inserttable + "/**\n" + "* @ClassName: "
+					+ "import com.github.becausetesting.cucumber.selenium.BaseSteps;\n" + inserttable + "/**\n" + "* @ClassName: "
 					+ typename + "\n" + "* @Description: TODO\n" + "* @author: TODO\n" + "* @date: " + date + "\n"
 					+ "* \n" + "*/\n\n";
 

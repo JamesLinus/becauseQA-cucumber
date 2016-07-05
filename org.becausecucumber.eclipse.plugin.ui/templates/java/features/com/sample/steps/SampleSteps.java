@@ -3,12 +3,13 @@ package com.sample.steps;
 
 
 import org.openqa.selenium.Keys;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-import com.framework.utilities.BaseSteps;
+import com.github.becausetesting.cucumber.selenium.BaseSteps;
 
 import cucumber.api.java.en.Then;
 
@@ -19,8 +20,10 @@ import cucumber.api.java.en.Then;
 
 public class SampleSteps extends BaseSteps{
 	
-	
-	@FindBy(how=How.XPATH,using="//*[@id='p_13838465-p']")
+	@FindAll({
+		@FindBy(how=How.XPATH,using="//*[@id='p_13838465-p']"),
+		@FindBy(how=How.XPATH,using="//*[@id='p_13838465-p2']")
+		}	
 	public WebElement searchbox;
 	
 	

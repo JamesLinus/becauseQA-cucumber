@@ -94,6 +94,12 @@
             <keywordReference id="org.becausecucumber.eclipse.plugin.ui.keyword_Cucumber"/>
         </page>
         <page
+              category="org.becausecucumber.eclipse.plugin.Cucumber"
+              class="org.becausecucumber.eclipse.plugin.ui.preference.ContentAssitantPreferencePage"
+              id="org.becausecucumber.eclipse.plugin.ui.contentassistantpage"
+              name="Content Assist">
+        </page>
+        <page
             category="org.becausecucumber.eclipse.plugin.Cucumber"
             class="org.becausecucumber.eclipse.plugin.ui.CucumberExecutableExtensionFactory:org.eclipse.xtext.ui.editor.templates.XtextTemplatePreferencePage"
             id="org.becausecucumber.eclipse.plugin.Cucumber.templates"

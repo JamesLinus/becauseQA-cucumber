@@ -49,7 +49,8 @@ public class PerformSearcher {
 		IProject project = CommonPluginUtils.getActiveProject();
 		IResource[] roots=null;
 		try {
-			roots = project.members();
+			if(project!=null)
+			   roots = project.members();
 			if(roots==null){
 				roots = ResourcesPlugin.getWorkspace().getRoot().getProjects(); 
 			}

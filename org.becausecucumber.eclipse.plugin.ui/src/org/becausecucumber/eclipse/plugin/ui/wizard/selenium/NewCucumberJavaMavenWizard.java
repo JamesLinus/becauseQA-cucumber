@@ -393,7 +393,7 @@ public class NewCucumberJavaMavenWizard extends AbstractMavenProjectWizard imple
 			CustomProjectSupport.createProjectStructure(baseproject, basepaths);
 
 			// seleniumversion=artifactPage.getSelenium();
-			addBaseSeleniumDependency(baseproject, seleniumversion);
+			//addBaseSeleniumDependency(baseproject, seleniumversion);
 			MavenUtils.updateDepenency(baseproject);
 		}
 
@@ -451,7 +451,7 @@ public class NewCucumberJavaMavenWizard extends AbstractMavenProjectWizard imple
 
 		// addnewProperties(newproject,env,browser,record);
 		// add the base automation project for using
-		MavenUtils.addMavenDependency(newproject, "com.framework", "BaseCucumber", "1.2.0", null, null, null);
+		MavenUtils.addMavenDependency(newproject, "com.github.becausetesting", "commons", "RELEASE", null, null, null);
 
 		/*
 		 * MavenUtils.addMavenDependency(newproject,"info.cukes","cucumber-java"
