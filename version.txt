@@ -1,4 +1,14 @@
 --------------------------------------------------------
+Version: 1.0.1 2016.05.27
+New Feature:
+1. Content Assistant upgrade; 
+
+
+Bug Fixed:
+N0
+
+--------------------------------------------------------
+--------------------------------------------------------
 Version: 1.0.0 2016.05.27
 New Feature:
 1. Content assistant with triggerred when you type any word in feature file.
